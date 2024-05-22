@@ -1,0 +1,19 @@
+.language {
+    display: flex;
+    flex-direction: row;
+    border: 1px #337ab7 solid;
+}
+
+.languageItem {
+    background: #fff;
+    cursor: pointer;
+    width: auto;
+    padding: 5px;
+}
+
+.languageItemActive {
+    background: #337ab7;
+    color: white;
+    width: auto;
+    padding: 5px;
+}

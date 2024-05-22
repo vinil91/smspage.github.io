@@ -9,10 +9,240 @@
   #team,
   #contact,
   #footer {
-    width: 111%;
+    width: 100%;
   }
 
   #portfolio {
     width: 110%;
   }
+}
+
+.active {
+  color: #337ab7 !important;
+}
+
+.logo {
+  width: 25%;
+}
+
+.noPad {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.logoDiv {
+  background-image: url("./smsretailblue.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  width: 270px;
+  height: 60px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  @media screen and (max-width: 1100px) {
+    flex-direction: column;
+  }
+}
+
+.menu {
+  width: 55%;
+  margin: auto;
+@media screen and (max-width: 1024px) {
+  margin: 0;
+  width: auto;
+}
+}
+
+.menuitems {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  @media screen and (max-width: 1024px) {
+    justify-content: center;
+  }
+@media screen and (max-width: 600px) {
+  flex-wrap: wrap;
+}
+}
+
+.contacts {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 25px;
+  border: 0;
+  padding-right: 25px;
+@media screen and (max-width: 1024px) {
+  justify-content: center;
+}
+}
+
+.header-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contactline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+@media screen and (max-width: 600px) {
+  font-size: 8px;
+}
+}
+
+.contactlinephone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+@media screen and (max-width: 600px) {
+  font-size: 8px;
+}
+
+}
+
+
+.nowrap {
+  white-space: nowrap
+}
+
+.newstring {
+display: none;
+@media screen and (max-width: 600px) {
+  display: block;
+  width: 100%;
+}
+
+}
+
+.newstring1 {
+  width: 50px;
+
+}
+
+.menuitemsMobile {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+@media screen and (max-width: 1024px) {
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  flex-wrap: no-wrap;
+}
+}
+
+.menuitemsMobileContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+margin-bottom: 0px;
+@media screen and (max-width: 600px) {
+  flex-direction: column;
+}
+}
+
+.itemContainer {
+
+}
+
+.itemContainer > a {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px 2px;
+  border-radius: 0;
+  margin: 10px 0;
+  color: #777;
+}
+
+.itemContainer > a:hover:after {
+  width: 100%;
+}
+.itemContainer.active > a,
+.itemContainer.active > a:hover,
+.itemContainer.active > a:focus {
+  background-color: transparent;
+}
+.itemContainer.active > a:after,
+.itemContainer.active > a:hover:after,
+.itemContainer.active > a:focus:after {
+  display: block !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: -1px !important;
+  width: 100% !important;
+  height: 2px !important;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+  content: "" !important;
+  transition: width 0.2s !important;
+}
+
+.logoMobile {
+  margin-bottom: 0;
+  margin-right: 20px;
+@media screen and (max-width: 600px) {
+  margin-bottom: 10px;
+  margin-right: 0px;
+}
+}
+
+.mainPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+@media screen and (max-width: 1024px) {
+  flex-direction: column;
+}
+}
+
+.mainRow {
+  color: #337ab7;
+}
+
+.servicesInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 40px;
+  padding: 50px;
+}
+
+.servicesIcon {
+  position: relative;
+  top: 5px;
+  margin-right: 5px;
+}
+
+.servicePage {
+  background: url(./hey2.png) repeat;
+  padding-top: 50px;
+}
+
+.contact-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactitem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
