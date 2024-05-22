@@ -2,10 +2,8 @@ import React from "react";
 import "./Language.css";
 import useLocalStorage from '../../hooks/use-localstorage';
 import i18n from '../../i18n';
-import { useTranslation } from 'react-i18next';
 
 export const Language = (props) => {
-    const { t } = useTranslation();
     const [language, setLanguage] = useLocalStorage('language', 'ru');
 
     const handleLenguageChangeToEN = () => {
